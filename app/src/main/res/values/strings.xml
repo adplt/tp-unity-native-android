@@ -1,0 +1,143 @@
+<resources>
+    <string name="app_name">TP Unity</string>
+    <string name="prm_number">PRM Number</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="login_text">Team Promotion Login</string>
+
+    <string name="menu_1">Input Data</string>
+    <string name="menu_2">Absence</string>
+    <string name="menu_3">Schedule</string>
+    <string name="menu_4">Product</string>
+    <string name="menu_5">Setting</string>
+    <string name="menu_6">Logout</string>
+
+    <string name="profile">Profile</string>
+    <string name="event">Event</string>
+
+    <string name="on_label">On</string>
+    <string name="off_label">Off</string>
+    <string name="alarm_label">Alarm</string>
+    <string name="remind_me_at">Remind Me At</string>
+    <string name="sound">Sound</string>
+    <string name="font_size_to_follow_up">Font Size</string>
+    <string name="save_setting">Save Setting</string>
+
+    <string name="add_absence">Add Absence</string>
+    <string name="detail">Detail</string>
+    <string name="history">History</string>
+    <string name="lets_do_follow_up">Follow Up</string>
+    <string name="ranking">TOP Team Promotion</string>
+    <string name="form">Form Input Data</string>
+    <string name="submit">Submit</string>
+
+    <string name="tp_name">TP Name</string>
+    <string name="info_tp">Info TP</string>
+    <string name="menu">Menu</string>
+    <string name="add_available">Add Available</string>
+    <string name="about">About</string>
+    <string name="home">TOP Team Promotion</string>
+
+    <string name="edit_profile">Edit Profile</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="text_size">Follow Up Text Size</string>
+    <string name="save">Save</string>
+    <string name="only_show">Only Show:</string>
+    <string name="data">Follow Up Data:</string>
+    <string name="calculate_salary">Salary</string>
+
+    <string name="account">Account</string>
+    <string name="alarm">Alarm</string>
+    <string name="general">General</string>
+
+    <string name="search_hint">Search</string>
+    <string name="app_label"></string>
+
+    <string name="gcm_api_key">AIzaSyCoyadf-q-8Lz2pEqdNBQrli3Ve6wGNk-c</string>
+    <string name="gcm_sender_id">665532885643</string>
+
+    <!--****************************************For GCM*********************************************************-->
+
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Android Push Notifications</string>
+    <string name="error_config">Please set the %1$s constant and recompile the app.</string>
+    <string name="already_registered">Device is already registered on server.</string>
+    <string name="gcm_registered">GCM: device successfully registered!</string>
+    <string name="gcm_unregistered">GCM: device successfully unregistered!</string>
+    <string name="gcm_message">GCM: you got message!</string>
+    <string name="gcm_error">GCM: error (%1$s).</string>
+    <string name="gcm_recoverable_error">GCM: recoverable error (%1$s).</string>
+    <string name="gcm_deleted">GCM: server deleted %1$d pending messages!</string>
+    <string name="server_registering">Trying (attempt %1$d/%2$d) to register device on Demo Server.</string>
+    <string name="server_registered">Demo Server: successfully added device!</string>
+    <string name="server_unregistered">Demo Server: successfully removed device!</string>
+    <string name="server_register_error">Could not register device on Demo Server after %1$d attempts.</string>
+    <string name="server_unregister_error">Could not unregister device on Demo Server (%1$s).</string>
+    <string name="options_register">Register</string>
+    <string name="options_unregister">Unregister</string>
+    <string name="options_clear">Clear</string>
+    <string name="options_exit">Exit</string>
+
+    <!--********************************************************************************************************-->
+
+    <string-array name="setting">
+        <item>Account</item>
+        <item>Alarm</item>
+        <item>General</item>
+    </string-array>
+
+    <string-array name="alarm_option">
+        <item>On</item>
+        <item>Off</item>
+    </string-array>
+
+    <string-array name="remind_me_at_option">
+        <item>1 Hour</item>
+        <item>2 Hour</item>
+        <item>3 Hour</item>
+        <item>1 Day</item>
+        <item>2 Days</item>
+        <item>3 Days</item>
+        <item>1 Week</item>
+    </string-array>
+
+    <string-array name="sound_option">
+        <item>Any.DO Pop</item>
+        <item>Basic Bell</item>
+        <item>Chime</item>
+        <item>Dawn Chorus</item>
+        <item>Ecliptic</item>
+        <item>Flying in The Sky</item>
+        <item>Glisando Tone</item>
+        <item>Hangout Call</item>
+        <item>Ice Blue Tone</item>
+        <item>Journey</item>
+    </string-array>
+
+    <string-array name="follow_up_text_size_option">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+    </string-array>
+
+    <string-array name="follow_up_data_option">
+        <item>Data Expo 1</item>
+        <item>Data Expo 2</item>
+        <item>Data Expo 3</item>
+    </string-array>
+
+    <string-array name="follow_up_result_option">
+        <item>Yes, he/she interest</item>
+        <item>No, he/she doesn\'t interest</item>
+    </string-array>
+
+    <string-array name="option_edit_profile">
+        <item>Gallery</item>
+        <item>Camera</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".Login"
+    android:gravity="center"
+    android:background="#FFFFFF"
+    android:id="@+id/unnamed_76">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/unnamed_77"
+        android:layout_alignTop="@+id/login_button">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/unnamed_78">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="120dp"
+                android:id="@+id/unnamed_79"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp">
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/logo_label"
+                    android:textColor="#000000"
+                    android:textIsSelectable="false"
+                    android:textAlignment="center"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="30sp"
+                    android:background="@drawable/logo"
+                    android:contentDescription=""
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/prm_number_field"
+                    android:layout_gravity="center_horizontal"
+                    android:hint="@string/prm_number"
+                    android:textColorHint="#adadad"
+                    android:inputType="textPersonName"
+                    android:typeface="serif"
+                    android:layout_below="@+id/logo_label"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="50sp"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:ems="10"
+                    android:id="@+id/password_field"
+                    android:hint="@string/password"
+                    android:textColor="#000000"
+                    android:textIsSelectable="false"
+                    android:textColorHint="#adadad"
+                    android:typeface="serif"
+                    android:layout_below="@+id/prm_number_field"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login"
+                    android:id="@+id/login_button"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/border_button"
+                    android:textStyle="bold"
+                    android:typeface="serif"
+                    android:layout_below="@+id/password_field"
+                    android:layout_alignParentRight="true"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginBottom="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Copyright © 2016 by TP Unity. Allright  reserved."
+                    android:id="@+id/textView"
+                    android:singleLine="false"
+                    android:gravity="center"
+                    android:layout_below="@+id/login_button"
+                    android:layout_alignStart="@+id/logo_label" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

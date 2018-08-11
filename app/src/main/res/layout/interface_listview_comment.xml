@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/unnamed_148">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/background_relative_layout"
+        android:id="@+id/unnamed_149"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="5dp">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:id="@+id/unnamed_150">
+
+            <com.github.siyamed.shapeimageview.CircularImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/profile_picture"
+                android:contentDescription=""
+                android:src="@drawable/ic_logo_48dp"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pg"
+                android:layout_gravity="center" />
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/comment"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:text="Comment"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/date"
+            android:layout_alignStart="@+id/tp_name"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score"
+            android:id="@+id/score"
+            android:layout_alignTop="@+id/tp_name"
+            android:layout_toEndOf="@+id/tp_name"
+            android:layout_marginTop="5dp"
+            android:textSize="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tp_name"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:typeface="normal"
+            android:text="TP&apos;s Name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/unnamed_150"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:id="@+id/date"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/tp_name"
+            android:layout_alignStart="@+id/comment"
+            android:layout_marginBottom="5dp"
+            android:textSize="10dp" />
+
+    </RelativeLayout>
+</RelativeLayout>

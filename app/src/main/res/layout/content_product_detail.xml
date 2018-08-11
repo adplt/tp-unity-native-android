@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ProductDetail"
+    tools:showIn="@layout/app_bar_product_detail"
+    android:background="#FFFFFF"
+    android:id="@+id/refresh_11">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_margin="20dp"
+        android:id="@+id/relativeLayout1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PRODUCT INFO"
+            android:id="@+id/textView3"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:typeface="serif"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Branch Name"
+            android:id="@+id/branch_name"
+            android:typeface="sans"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_below="@+id/textView3"
+            android:layout_toEndOf="@+id/branch_icon"
+            android:layout_marginTop="28dp" />
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:typeface="sans"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:background="@drawable/ic_person_black_36dp"
+            android:id="@+id/branch_icon"
+            android:layout_alignTop="@+id/branch_name"
+            android:layout_alignParentStart="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:typeface="sans"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:background="@drawable/ic_email_black_36dp"
+            android:id="@+id/faculty_icon"
+            android:layout_below="@+id/branch_icon"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Faculty Name"
+            android:id="@+id/faculty_name"
+            android:typeface="sans"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:layout_alignBottom="@+id/faculty_icon"
+            android:layout_alignStart="@+id/branch_name" />
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:typeface="sans"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:background="@drawable/ic_place_black_36dp"
+            android:id="@+id/degree_icon"
+            android:layout_below="@+id/faculty_icon"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Degree Name"
+            android:typeface="sans"
+            android:textSize="20dp"
+            android:id="@+id/degree_name"
+            android:textColor="#000000"
+            android:layout_alignBottom="@+id/degree_icon"
+            android:layout_alignStart="@+id/faculty_name" />
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:typeface="sans"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:background="@drawable/ic_place_black_36dp"
+            android:id="@+id/requirement_icon"
+            android:layout_below="@+id/degree_icon"
+            android:layout_alignParentStart="true"
+            android:layout_marginRight="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Requirement"
+            android:typeface="sans"
+            android:textSize="20dp"
+            android:id="@+id/requirement_note"
+            android:textColor="#000000"
+            android:layout_alignBottom="@+id/requirement_icon"
+            android:layout_toEndOf="@+id/requirement_icon" />
+    </RelativeLayout>
+</RelativeLayout>

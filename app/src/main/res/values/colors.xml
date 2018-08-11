@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <color name="colorPrimary">#64B5F6</color>
+    <color name="colorPrimaryDark">#42A5F5</color>
+    <color name="colorAccent">#90CAF9</color>
+    <color name="white_background">#ffffff</color>
+    <color name="black_background">#000000</color>
+    <color name="gray_background">#e4e1e1</color>
+
+    <color name="available_normal_button">#D91C5C</color>
+    <color name="support_normal_button">#4BB649</color>
+    <color name="event_normal_button">#F6921E</color>
+
+    <color name="available_pressed_button">#C2185B</color>
+    <color name="support_pressed_button">#43A047</color>
+    <color name="event_pressed_button">#EF6C00</color>
+</resources>

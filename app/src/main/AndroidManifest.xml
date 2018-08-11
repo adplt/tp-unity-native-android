@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tpapp.www.tpapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!--com.tpapp.www.tpapp.permission.C2D_MESSAGE-->
+
+    <permission
+        android:name="com.tpapp.www.tpapp.permission.C2D_MESSAGE"
+        android:protectionLevel="signature"/>
+
+    <uses-permission
+        android:name="com.tpapp.www.tpapp.permission.C2D_MESSAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_logo_48dp"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:name=".MainClass">
+        <activity
+            android:name=".Home"
+            android:label="@string/home"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".InputData"
+            android:label="@string/menu_1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SplashScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Filter"
+            android:label="@string/lets_do_follow_up"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".History"
+            android:label="@string/history"/>
+        <activity
+            android:name=".Absence"
+            android:label="@string/menu_2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Setting"
+            android:label="@string/menu_5"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Profile"
+            android:label="@string/profile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Event"
+            android:label="@string/event"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Schedule"
+            android:label="@string/menu_3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddAvailable"
+            android:label="@string/add_available"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HistoryDetail"
+            android:label="@string/detail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EditProfile"
+            android:label="@string/edit_profile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AbsenceDetail"
+            android:label="@string/detail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddAbsence"
+            android:label="@string/add_absence"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AccountSetting"
+            android:label="@string/account"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AlarmSetting"
+            android:label="@string/alarm"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GeneralSetting"
+            android:label="@string/general"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProfileLogin"
+            android:label="@string/profile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Product"
+            android:label="@string/menu_4"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".EventDetail"
+            android:label="@string/detail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AvailableDetail"
+            android:label="@string/detail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EditAbsence"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EditAvailable"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Chat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ListPeople"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProductList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProductDetail"
+            android:screenOrientation="portrait" />
+
+        <!--
+             ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <category android:name="com.example.gcm" />
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="com.tpapp.www.tpapp.GCMListenerService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.tpapp.www.tpapp.GCMIDListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".GCMIntentService"/>
+
+        <receiver
+            android:name=".AlarmReceiver" />
+
+        <service
+            android:name=".RingtonePlayingService"
+            android:enabled="true" />
+    </application>
+
+</manifest>

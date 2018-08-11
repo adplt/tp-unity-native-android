@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ProfileLogin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentStart="true"
+    tools:showIn="@layout/app_bar_profile_login"
+    android:background="#FFFFFF"
+    android:id="@+id/refresh_9">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/unnamed_176"
+        android:layout_above="@+id/rating_button">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/rating"
+            android:layout_alignParentTop="true"
+            android:id="@+id/profile_background">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/unnamed_173">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:id="@+id/background_profile_login"
+                    android:background="@drawable/background_in_profile"
+                    android:src="@color/colorPrimary" />
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pg_1"
+                    android:layout_gravity="center" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/score_label"
+                android:layout_alignStart="@+id/picture"
+                android:id="@+id/unnamed_170"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="left|bottom">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/picture"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_logo_48dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="center" />
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pg_2"
+                    android:layout_gravity="center" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="                                                     "
+                android:id="@+id/name_icon"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:typeface="serif"
+                android:layout_below="@+id/unnamed_173"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_toEndOf="@+id/unnamed_170" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="                           "
+                android:id="@+id/score_label"
+                android:textSize="20dp"
+                android:typeface="serif"
+                android:textColor="#000000"
+                android:layout_marginLeft="30dp"
+                android:layout_alignParentBottom="false"
+                android:layout_alignStart="@+id/name_icon"
+                android:layout_below="@+id/name_icon"
+                android:layout_marginBottom="30dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="                                      "
+                android:id="@+id/no_prm_label"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:typeface="serif"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@+id/score_label" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="                                            "
+                android:id="@+id/gender_label"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:typeface="serif"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="30dp"
+                android:layout_below="@+id/no_prm_label" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_background"
+                android:id="@+id/divider_1"
+                android:layout_alignStart="@+id/unnamed_177"
+                android:layout_marginBottom="30dp"
+                android:layout_below="@+id/gender_label"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TIME MANAGEMENT"
+                android:id="@+id/unnamed_177"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:layout_alignStart="@+id/gender_label"
+                android:layout_alignParentBottom="false"
+                android:layout_below="@+id/divider_1"
+                android:typeface="serif" />
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/value_4"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_alignBottom="@+id/unnamed_177"
+                android:layout_marginLeft="20dp"
+                android:layout_toEndOf="@+id/score_label"
+                android:isIndicator="false"
+                android:numStars="5"
+                android:layout_below="@+id/divider_1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="INTUITIVE"
+                android:id="@+id/unnamed_142"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:layout_alignStart="@+id/unnamed_177"
+                android:layout_below="@+id/value_4"
+                android:layout_marginTop="10dp"
+                android:typeface="serif" />
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/value_5"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_alignTop="@+id/unnamed_142"
+                android:layout_alignStart="@+id/value_4"
+                android:layout_above="@+id/unnamed_143"
+                android:layout_alignEnd="@+id/value_4"
+                android:isIndicator="false"
+                android:numStars="5"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RESPONSIBLE"
+                android:id="@+id/unnamed_143"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:layout_below="@+id/unnamed_142"
+                android:layout_alignStart="@+id/unnamed_142"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                android:typeface="serif" />
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/value_6"
+                android:layout_alignTop="@+id/unnamed_143"
+                android:layout_alignStart="@+id/value_5"
+                style="?android:attr/ratingBarStyleSmall"
+                android:isIndicator="false"
+                android:layout_alignEnd="@+id/value_5"
+                android:numStars="5"
+                android:layout_alignBottom="@+id/unnamed_143" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_background"
+                android:id="@+id/divider_event_1"
+                android:layout_alignStart="@+id/comment_profile_login_label"
+                android:layout_below="@+id/unnamed_143"
+                android:layout_alignEnd="@+id/divider_1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COMMENT"
+                android:id="@+id/comment_profile_login_label"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:layout_below="@+id/divider_event_1"
+                android:layout_alignStart="@+id/unnamed_143"
+                android:layout_marginTop="30dp"
+                android:typeface="serif" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/unnamed_181"
+                android:layout_below="@+id/comment_profile_login_label">
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pg_3"
+                    android:layout_alignBottom="@+id/edit_profile_label"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No one comment here for this month."
+                    android:id="@+id/error_message_2"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15dp"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="bottom"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/rating_button"
+        android:background="@drawable/long_button">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Profile"
+            android:textColor="#ffffff"
+            android:typeface="serif"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/edit_profile_label" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

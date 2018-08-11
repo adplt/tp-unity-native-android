@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Filter"
+    android:background="#FFFFFF"
+    android:id="@+id/include_layout">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/unnamed_43">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/unnamed_44">
+
+            <Spinner
+                style="@style/spinner_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/follow_up_data_option"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentStart="false"
+                android:layout_below="@+id/unnamed_45"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/data"
+                android:id="@+id/unnamed_45"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:typeface="serif"
+                android:singleLine="false"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp" />
+
+            <!--
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/only_show"
+                android:id="@+id/unnamed_46"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:typeface="serif"
+                android:singleLine="false"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@+id/follow_up_data_option"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/unnamed_47"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@+id/unnamed_46"
+                android:layout_alignStart="@+id/unnamed_46"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp">
+
+                <CheckBox
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:text="Name"
+                    android:id="@+id/name_checkbox"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:layout_marginRight="30dp"
+                    android:layout_below="@+id/unnamed_46"
+                    android:layout_alignStart="@+id/textView" />
+
+                <CheckBox
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:text="Phone Number"
+                    android:id="@+id/phone_number_checkbox"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:layout_alignTop="@+id/email_checkbox"
+                    android:layout_toEndOf="@+id/email_checkbox" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/unnamed_47"
+                android:id="@+id/unnamed_48"
+                android:layout_below="@+id/unnamed_47"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="30dp">
+
+                <CheckBox
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:text="Work Number"
+                    android:id="@+id/work_number_checkbox"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:layout_marginRight="30dp"
+                    android:layout_above="@+id/lets_do_follow_up"
+                    android:layout_alignStart="@+id/lets_do_follow_up" />
+
+                <CheckBox
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:text="Email"
+                    android:id="@+id/email_checkbox"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:layout_marginRight="30dp"
+                    android:layout_above="@+id/lets_do_follow_up"
+                    android:layout_alignStart="@+id/lets_do_follow_up" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/unnamed_49"
+                android:layout_below="@+id/unnamed_48"
+                android:layout_alignStart="@+id/unnamed_50"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="30dp">
+
+                <CheckBox
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:text="Company"
+                    android:id="@+id/company_checkbox"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:layout_alignTop="@+id/work_number_checkbox"
+                    android:layout_toEndOf="@+id/work_number_checkbox" />
+
+                <CheckBox
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:text="Address"
+                    android:id="@+id/address_checkbox"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toEndOf="@+id/name_checkbox"
+                    android:layout_marginLeft="30dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/unnamed_50"
+                android:layout_below="@+id/unnamed_49"
+                android:layout_alignStart="@+id/unnamed_48"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="30dp">
+
+                <CheckBox
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:text="Alumni"
+                    android:id="@+id/alumni_checkbox"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:layout_marginRight="30dp"
+                    android:layout_above="@+id/lets_do_follow_up"
+                    android:layout_alignStart="@+id/lets_do_follow_up" />
+
+                <CheckBox
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:text="Major"
+                    android:id="@+id/major_checkbox"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:layout_alignTop="@+id/alumni_checkbox"
+                    android:layout_toEndOf="@+id/alumni_checkbox" />
+            </TableRow>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/unnamed_52"
+                android:layout_below="@+id/unnamed_50"
+                android:layout_alignParentEnd="true"
+                android:layout_alignStart="@+id/unnamed_48"
+                android:layout_marginBottom="30dp"
+                android:layout_marginRight="30dp">
+
+                <CheckBox
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:text="Select All"
+                    android:id="@+id/select_all_checkbox"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/note_label"
+                android:layout_below="@+id/unnamed_52"
+                android:layout_alignStart="@+id/unnamed_46"
+                android:textSize="15dp"
+                android:typeface="serif"
+                android:textColor="#000000"
+                android:layout_alignEnd="@+id/unnamed_52"
+                android:textStyle="bold"
+                android:text="Note:" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name, Phone Number, and Work Number is default for follow up."
+                android:id="@+id/note_message"
+                android:layout_alignStart="@+id/note_label"
+                android:layout_below="@+id/note_label"
+                android:typeface="serif"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:layout_alignEnd="@+id/unnamed_52" />
+
+            -->
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/input_response_field"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/lets_do_follow_up"
+        android:background="@drawable/long_button">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Follow Up"
+            android:layout_gravity="center_horizontal|bottom"
+            android:textColor="#ffffff"
+            android:typeface="serif"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/follow_up_label" />
+    </RelativeLayout>
+</RelativeLayout>

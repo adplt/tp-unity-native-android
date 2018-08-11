@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AddAvailable"
+    tools:showIn="@layout/app_bar_add_available"
+    android:background="#FFFFFF"
+    android:id="@+id/unnamed_14">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/unnamed_15"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/save_available">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/unnamed_16">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/unnamed_17">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Start"
+                    android:id="@+id/start_label_available"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="10dp" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/start_date_available"
+                    android:background="@drawable/ic_date_range_black_36dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_below="@+id/start_label_available"
+                    android:layout_alignEnd="@+id/finish_label_available"
+                    android:layout_alignStart="@+id/end_date_icon_available"
+                    android:layout_marginBottom="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/start_time_icon_available"
+                    android:background="@drawable/ic_schedule_black_36dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_below="@+id/start_date_available"
+                    android:layout_alignEnd="@+id/start_date_available" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/start_date_field_available"
+                    android:hint="Double tap to select date."
+                    android:layout_alignStart="@+id/start_time_field_available"
+                    android:layout_alignEnd="@+id/start_time_field_available"
+                    android:layout_alignBottom="@+id/start_date_available"
+                    android:layout_alignTop="@+id/start_date_available" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/start_time_field_available"
+                    android:hint="Double tap to select time."
+                    android:layout_toEndOf="@+id/start_date_available"
+                    android:layout_below="@+id/start_date_field_available"
+                    android:layout_above="@+id/finish_label_available" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Finish"
+                    android:id="@+id/finish_label_available"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:layout_below="@+id/start_time_icon_available"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_alignStart="@+id/start_label_available" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/end_date_icon_available"
+                    android:background="@drawable/ic_date_range_black_36dp"
+                    android:layout_below="@+id/finish_label_available"
+                    android:layout_alignEnd="@+id/start_label_available" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/end_time_icon_available"
+                    android:background="@drawable/ic_schedule_black_36dp"
+                    android:layout_below="@+id/end_date_field_available"
+                    android:layout_alignEnd="@+id/end_date_icon_available"
+                    android:layout_marginTop="10dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/end_date_field_available"
+                    android:layout_alignEnd="@+id/start_time_field_available"
+                    android:hint="Double tap to select date."
+                    android:layout_alignTop="@+id/end_date_icon_available"
+                    android:layout_alignStart="@+id/start_time_field_available" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/end_time_field_available"
+                    android:layout_alignTop="@+id/end_time_icon_available"
+                    android:layout_alignEnd="@+id/start_time_field_available"
+                    android:hint="Double tap to select time"
+                    android:layout_alignStart="@+id/end_date_field_available" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/date_available">
+
+                <DatePicker
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/get_date_available"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:id="@+id/time_available"
+                android:layout_alignStart="@+id/unnamed_17"
+                android:layout_alignEnd="@+id/unnamed_17"
+                android:gravity="center">
+
+                <TimePicker
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/get_time_available"
+                    android:layout_alignParentStart="false" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="bottom"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/long_button"
+        android:id="@+id/save_available">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:textColor="#ffffff"
+            android:typeface="serif"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/save_available_label" />
+    </RelativeLayout>
+</RelativeLayout>

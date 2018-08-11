@@ -1,0 +1,11 @@
+body {
+    padding-top: 70px;
+}
+.navbar-brand{
+    color: white !important;
+}
+.right-bottom{
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+}

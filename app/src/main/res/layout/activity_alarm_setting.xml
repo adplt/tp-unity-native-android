@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AlarmSetting"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_alarm_setting"
+    android:background="#FFFFFF"
+    android:id="@+id/unnamed_18">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/unnamed_19">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/unnamed_20">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/alarm"
+                android:id="@+id/unnamed_21"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp" />
+
+            <Spinner
+                style="@style/spinner_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/alarm_option"
+                android:layout_alignParentEnd="true"
+                android:spinnerMode="dialog"
+                android:layout_below="@+id/unnamed_21"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/remind_me_at"
+                android:id="@+id/unnamed_22"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:layout_below="@+id/alarm_option"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp" />
+
+            <Spinner
+                style="@style/spinner_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/remind_me_at_option"
+                android:spinnerMode="dialog"
+                android:layout_below="@+id/unnamed_22"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sound"
+                android:id="@+id/unnamed_23"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:layout_below="@+id/remind_me_at_option"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textIsSelectable="false" />
+
+            <Spinner
+                style="@style/spinner_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sound_option"
+                android:spinnerMode="dialog"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/unnamed_23"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/input_response_field"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/save_button"
+        android:background="@drawable/long_button">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:layout_gravity="center_horizontal|bottom"
+            android:textColor="#ffffff"
+            android:typeface="serif"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/save_label" />
+    </RelativeLayout>
+
+</RelativeLayout>

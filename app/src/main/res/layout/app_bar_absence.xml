@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Absence">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.NoActionBar.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_5"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.NoActionBar.PopupOverlay">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:typeface="serif"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:text="Absence"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/unnamed_83" />
+
+        </android.support.v7.widget.Toolbar>
+
+        <!--
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true">
+
+            <RelativeLayout
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/add_absence_button"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:typeface="serif"
+                    android:id="@+id/textView29"
+                    android:background="@drawable/ic_add_white_36dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/textView28"
+                    android:layout_marginTop="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_absence"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:typeface="serif"
+                    android:id="@+id/textView28"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/calculate_salary_button"
+                android:layout_marginRight="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:typeface="serif"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/textView30"
+                    android:background="@drawable/ic_credit_card_white_36dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toLeftOf="@+id/textView31"
+                    android:layout_marginTop="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/calculate_salary"
+                    android:textColor="#ffffff"
+                    android:typeface="serif"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/textView31" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        -->
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_absence" />
+
+</android.support.design.widget.CoordinatorLayout>

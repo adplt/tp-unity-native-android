@@ -1,0 +1,25 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/add"
+        android:orderInCategory="101"
+        android:icon="@drawable/ic_add_white_36dp"
+        app:showAsAction="ifRoom|withText"
+        android:title="Add Absence" />
+
+    <item
+        android:id="@+id/salary"
+        android:orderInCategory="101"
+        android:icon="@drawable/ic_credit_card_white_36dp"
+        app:showAsAction="ifRoom|withText"
+        android:title="My Salary" />
+
+    <item
+        android:id="@+id/menu"
+        android:orderInCategory="101"
+        android:icon="@drawable/ic_apps_white_48dp"
+        app:showAsAction="ifRoom|withText"
+        android:title="Menu" />
+</menu>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ListPeople"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_list_people"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentBottom="true"
+    android:background="#e4e1e1"
+    android:id="@+id/refresh_2">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list_people_listview" />
+
+</com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout>

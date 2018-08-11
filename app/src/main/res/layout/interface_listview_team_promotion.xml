@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/unnamed_157">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/background_relative_layout"
+        android:padding="10dp"
+        android:id="@+id/unnamed_158">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tp_name"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:typeface="normal"
+            android:text="TP&apos;s Name"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/unnamed_159" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tp_score"
+            android:textSize="15sp"
+            android:textColor="#e4e1e1"
+            android:text="Score"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/tp_name"
+            android:layout_alignStart="@+id/tp_name"
+            android:layout_alignEnd="@+id/tp_name" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/unnamed_159">
+
+            <com.github.siyamed.shapeimageview.CircularImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/picture_tp"
+                android:contentDescription=""
+                android:src="@drawable/ic_logo_48dp"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/unnamed_159"
+                android:background="@drawable/civ_border" />
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pg_2"
+                android:layout_gravity="center" />
+        </FrameLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

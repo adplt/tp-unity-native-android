@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AvailableSchedule"
+    android:background="#FFFFFF"
+    android:id="@+id/refresh_4">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/unnamed_24">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/available_list"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/available_select_date"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:listSelector="@android:color/transparent"
+            android:background="#e4e1e1" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/border_button"
+            android:id="@+id/available_select_date"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Select Date"
+                android:layout_gravity="center_horizontal|bottom"
+                android:textColor="#ffffff"
+                android:typeface="serif"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/select_date_1" />
+            </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/date_available"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
+            <DatePicker
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/date_picker_available"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/option_layout_available_schedule">
+
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/option_listview_available_schedule"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout>

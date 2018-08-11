@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AvailableDetail"
+    tools:showIn="@layout/app_bar_available_detail"
+    android:background="#FFFFFF"
+    android:id="@+id/unnamed_111">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/unnamed_112">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/unnamed_113">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="START"
+                android:id="@+id/start_label_available_detail"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="30dp"
+                android:typeface="serif" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/start_date_available_detail"
+                android:background="@drawable/ic_date_range_black_36dp"
+                android:layout_marginRight="5dp"
+                android:layout_below="@+id/start_label_available_detail"
+                android:layout_alignEnd="@+id/finish_label_available_detail"
+                android:layout_alignStart="@+id/end_date_icon_available_detail"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/start_time_icon_available_detail"
+                android:background="@drawable/ic_schedule_black_36dp"
+                android:layout_marginRight="5dp"
+                android:layout_below="@+id/start_date_available_detail"
+                android:layout_alignEnd="@+id/start_date_available_detail"
+                android:layout_alignStart="@+id/start_date_available_detail" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/start_date_field_available_detail"
+                android:layout_alignStart="@+id/start_time_field_available_detail"
+                android:layout_alignEnd="@+id/start_time_field_available_detail"
+                android:layout_alignBottom="@+id/start_date_available_detail"
+                android:textColor="#000000"
+                android:text="Date clock in."
+                android:layout_alignTop="@+id/start_date_available_detail"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/start_time_field_available_detail"
+                android:layout_toEndOf="@+id/start_date_available_detail"
+                android:layout_above="@+id/finish_label_available_detail"
+                android:layout_alignTop="@+id/start_time_icon_available_detail"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:text="Time clock in."
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FINISH"
+                android:id="@+id/finish_label_available_detail"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:layout_below="@+id/start_time_icon_available_detail"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_alignStart="@+id/start_label_available_detail"
+                android:typeface="serif" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/end_date_icon_available_detail"
+                android:background="@drawable/ic_date_range_black_36dp"
+                android:layout_below="@+id/finish_label_available_detail"
+                android:layout_alignEnd="@+id/start_label_available_detail"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/end_time_icon_available_detail"
+                android:background="@drawable/ic_schedule_black_36dp"
+                android:layout_below="@+id/end_date_icon_available_detail"
+                android:layout_alignStart="@+id/start_time_icon_available_detail"
+                android:layout_alignEnd="@+id/end_date_icon_available_detail" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/end_date_field_available_detail"
+                android:layout_alignEnd="@+id/start_time_field_available_detail"
+                android:layout_alignTop="@+id/end_date_icon_available_detail"
+                android:layout_alignStart="@+id/start_time_field_available_detail"
+                android:layout_above="@+id/end_time_field_available_detail"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:text="Date clock out."
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/end_time_field_available_detail"
+                android:layout_alignTop="@+id/end_time_icon_available_detail"
+                android:layout_alignEnd="@+id/start_time_field_available_detail"
+                android:layout_alignStart="@+id/end_date_field_available_detail"
+                android:layout_alignBottom="@+id/end_time_icon_available_detail"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:text="Time clock out."
+                android:textColor="#000000" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

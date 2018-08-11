@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".EventDetail"
+    tools:showIn="@layout/app_bar_event_detail"
+    android:background="#FFFFFF"
+    android:id="@+id/unnamed_114">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/unnamed_115"
+        android:layout_above="@+id/unnamed_182"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:id="@+id/unnamed_116">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="30dp"
+                android:id="@+id/unnamed_169">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/unnamed_183">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginBottom="20dp"
+                        android:id="@+id/event_image" />
+
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pg_1"
+                        android:layout_gravity="center" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EVENT INFO"
+                    android:id="@+id/unnamed_184"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="10dp"
+                    android:typeface="serif"
+                    android:textSize="15dp"
+                    android:textColor="#000000"
+                    android:layout_below="@+id/unnamed_183" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/name_icon"
+                    android:typeface="sans"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:background="@drawable/ic_event_black_36dp"
+                    android:layout_below="@+id/unnamed_184"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:typeface="sans"
+                    android:textSize="20sp"
+                    android:id="@+id/address_icon"
+                    android:textColor="#000000"
+                    android:background="@drawable/ic_place_black_36dp"
+                    android:layout_below="@+id/name_icon"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:typeface="sans"
+                    android:textSize="20sp"
+                    android:id="@+id/date_icon"
+                    android:textColor="#000000"
+                    android:background="@drawable/ic_date_range_black_36dp"
+                    android:layout_below="@+id/address_icon"
+                    android:layout_alignEnd="@+id/address_icon"
+                    android:layout_marginBottom="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tp_icon"
+                    android:background="@drawable/ic_people_black_36dp"
+                    android:layout_below="@+id/date_icon"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/note_icon"
+                    android:typeface="sans"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:background="@drawable/ic_message_black_36dp"
+                    android:layout_below="@+id/tp_icon"
+                    android:layout_toStartOf="@+id/name_label" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:id="@+id/name_label"
+                    android:typeface="sans"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="15dp"
+                    android:layout_below="@+id/unnamed_184"
+                    android:layout_toEndOf="@+id/address_icon"
+                    android:layout_marginTop="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address"
+                    android:id="@+id/address_label"
+                    android:typeface="sans"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:layout_alignTop="@+id/address_icon"
+                    android:layout_alignStart="@+id/name_label"
+                    android:layout_marginTop="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date"
+                    android:typeface="sans"
+                    android:textSize="20sp"
+                    android:id="@+id/date_label"
+                    android:textColor="#000000"
+                    android:layout_alignTop="@+id/date_icon"
+                    android:layout_alignStart="@+id/address_label"
+                    android:layout_marginTop="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TP Name Who Stand"
+                    android:id="@+id/tp_label"
+                    android:typeface="sans"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:layout_alignTop="@+id/tp_icon"
+                    android:layout_alignStart="@+id/date_label"
+                    android:layout_marginTop="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Note"
+                    android:id="@+id/note_label"
+                    android:typeface="sans"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:layout_alignTop="@+id/note_icon"
+                    android:layout_alignStart="@+id/tp_label"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="30dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_background"
+                    android:id="@+id/divider_event_1"
+                    android:layout_marginLeft="30dp"
+                    android:layout_below="@+id/note_label"
+                    android:layout_marginBottom="30dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TP WHO HAS JOIN"
+                    android:id="@+id/unnamed_185"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/divider_event_1"
+                    android:layout_marginBottom="10dp"
+                    android:typeface="serif"
+                    android:textSize="15dp"
+                    android:textColor="#000000" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/unnamed_186"
+                    android:layout_below="@+id/unnamed_185" >
+
+                    <ProgressBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pg_2"
+                        android:layout_alignTop="@+id/decline_label"
+                        android:layout_alignEnd="@+id/decline_label"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="No one join for this event. You&apos;ll be the first if you join this event."
+                        android:id="@+id/error_message_1"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:textSize="15dp"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/unnamed_182"
+        android:layout_alignWithParentIfMissing="false"
+        android:gravity="center"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Accept"
+            android:id="@+id/accept_button"
+            android:textColor="#ffffff"
+            android:typeface="serif"
+            android:background="@drawable/border_button"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accept"
+                android:id="@+id/accept_label"
+                android:textColor="#FFFFFF" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Decline"
+            android:id="@+id/decline_button"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_cancel"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_below="@+id/accept_button"
+            android:layout_alignParentStart="true" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Decline"
+                android:id="@+id/decline_label"
+                android:textColor="#FFFFFF" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

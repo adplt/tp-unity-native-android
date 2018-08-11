@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true"
+    android:id="@+id/form_input_data"
+    android:background="#FFFFFF">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/full_name_field"
+        android:textColor="#000000"
+        android:textColorHint="#adadad"
+        android:hint="Full Name"
+        android:singleLine="true"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/unnamed_62"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/email_label"
+        android:textColor="#000000"
+        android:textColorHint="#adadad"
+        android:hint="Email"
+        android:layout_marginBottom="10dp"
+        android:singleLine="true"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/full_name_field"
+        android:layout_below="@+id/full_name_field" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/address_icon"
+        android:hint="Address"
+        android:textColorHint="#adadad"
+        android:textColor="#000000"
+        android:gravity="top"
+        android:singleLine="true"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/email_label"
+        android:layout_marginBottom="10dp"
+        android:layout_alignStart="@+id/work_number_label" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/phone_number_label"
+        android:hint="Phone Number"
+        android:layout_below="@+id/address_icon"
+        android:layout_alignParentEnd="true"
+        android:textColorHint="#adadad"
+        android:textColor="#000000"
+        android:layout_marginBottom="10dp"
+        android:singleLine="true"
+        android:layout_marginRight="30dp"
+        android:layout_toEndOf="@+id/unnamed_63"
+        android:layout_alignStart="@+id/address_icon" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/work_number_label"
+        android:hint="Work Phone"
+        android:textColorHint="#adadad"
+        android:textColor="#000000"
+        android:layout_below="@+id/phone_number_label"
+        android:layout_marginBottom="10dp"
+        android:singleLine="true"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/unnamed_64" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/date_icon"
+        android:layout_above="@+id/relativeLayout4"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/work_number_label"
+        android:hint="Company"
+        android:textColorHint="#adadad"
+        android:textColor="#000000"
+        android:layout_marginBottom="10dp"
+        android:singleLine="true"
+        android:layout_marginRight="30dp"
+        android:layout_toEndOf="@+id/unnamed_65" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/alumni_label"
+        android:layout_below="@+id/date_icon"
+        android:hint="Alumni"
+        android:textColorHint="#adadad"
+        android:textColor="#000000"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="10dp"
+        android:singleLine="true"
+        android:layout_marginRight="30dp"
+        android:layout_toEndOf="@+id/unnamed_66" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/major_label"
+        android:layout_below="@+id/alumni_label"
+        android:hint="Major"
+        android:textColorHint="#adadad"
+        android:textColor="#000000"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="10dp"
+        android:singleLine="true"
+        android:layout_marginRight="30dp"
+        android:layout_toEndOf="@+id/unnamed_67" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:id="@+id/submit_button"
+        android:layout_gravity="center_horizontal|bottom"
+        android:textColor="#ffffff"
+        android:typeface="serif"
+        android:textSize="20sp"
+        android:background="@drawable/border_button"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/major_label"
+        android:layout_margin="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/unnamed_62"
+        android:background="@drawable/ic_person_black_36dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/unnamed_69"
+        android:layout_alignBottom="@+id/full_name_field"
+        android:layout_marginBottom="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/unnamed_63"
+        android:background="@drawable/ic_phone_iphone_black_36dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="30dp"
+        android:layout_alignTop="@+id/phone_number_label"
+        android:layout_toStartOf="@+id/address_icon"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/unnamed_64"
+        android:background="@drawable/ic_local_phone_black_36dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignBottom="@+id/work_number_label"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/unnamed_65"
+        android:background="@drawable/ic_account_balance_black_36dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignBottom="@+id/date_icon"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/unnamed_66"
+        android:background="@drawable/ic_school_black_36dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignTop="@+id/alumni_label"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/unnamed_67"
+        android:background="@drawable/ic_local_library_black_36dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignTop="@+id/major_label"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/unnamed_68"
+        android:background="@drawable/ic_mail_black_36dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/unnamed_62"
+        android:layout_toStartOf="@+id/full_name_field"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/unnamed_69"
+        android:background="@drawable/ic_place_black_36dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/unnamed_68"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
